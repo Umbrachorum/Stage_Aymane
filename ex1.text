@@ -1,0 +1,23 @@
+"""
+for cloning with https use "git clone" command
+for push use : " git add *" in directory
+for adding commit " use git commit -m "your message" "
+for push use : git push"
+"""
+
+"""class PythonServerTCP
+    fonction connect
+    fonction disconnect
+    fonction send
+    fonction receivg
+    fonction 
+    fonction init_map_player
+
+#1) 2 tuple qui doivent être égale
+#2) tu créer du tableau a 2Dimension contenant des '*'
+#exemple: {3,3} = ***
+#                 ***
+#                 ***
+#3) mininum 10*10
+#4) la fonction doit renvoyer des erreurs clair lorsque les conditions ne sont pas rencontrées.
+def generate_card(client1_coord: tuple) -> None:
