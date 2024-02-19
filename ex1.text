@@ -5,6 +5,13 @@ for adding commit " use git commit -m "your message" "
 for push use : git push"
 """
 
+def simple_print(game: list):
+    print_game_card(game)
+    for obj in game:
+        for char in obj:
+            print('{:<5s}'.format(str(char)), end="")
+        print("")
+
 Ex2:
 fonction 1:
     1) récupérer le tableau créer dans l'exercice 1
