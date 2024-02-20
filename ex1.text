@@ -23,6 +23,7 @@ fonction 2:
 
 
 """class PythonServerTCP
+    fonction initialisation de la socket
     fonction connect
     fonction disconnect
     fonction send
