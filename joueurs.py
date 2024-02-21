@@ -1,8 +1,8 @@
 
 import map_generator
 class Joueurs:
-    def __init__(self):
-        self._nom : str= ""
+    def __init__(self, name):
+        self._nom : str= name
         self._carte : list= []
         self._carte_adversaire : list = []
     
@@ -12,6 +12,9 @@ class Joueurs:
     def getName(self) -> str:
         return self._nom
     
+    def insertInCard(self, lign: list):
+        self._carte.insert(0, lign)
+        
     def setCarte(self, liste : list):
         self._carte = liste
         

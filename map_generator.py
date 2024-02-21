@@ -8,7 +8,7 @@ def indexation(val : int) -> list :
     m = 0
     x =0
     for j in range(26):
-        if j <= val:
+        if j < val:
             x = j + 65
             tableau.append(chr(x))
         else :
@@ -40,9 +40,11 @@ def indexation(val : int) -> list :
                         tableau.append(chaine2)
                     m = m + 1
     tableau.insert(0, " ")
+    tableau.pop(-1)
     return tableau
 
 def generate_card(tuple1 : list) -> list:
+    print(tuple1[0], tuple1[1])
     carte = []
     if tuple1[0] != tuple1[1]:
         print("Les deux valeurs inscrites dans le tuple doivent être égales")
@@ -213,7 +215,7 @@ def simple_print(game: list):
 
 
 #point d'entrée du processus
-if __name__ == '__main__':
+"""if __name__ == '__main__':
     temp = input("Veuillez entrer deux nombres définissant la taille de la carte sous la forme d'un tuple")
     temp_buffer_without = temp[1:]
     temp_buffer_without = temp_buffer_without[:-1]
@@ -239,4 +241,4 @@ if __name__ == '__main__':
     if est_coule(tmp):
         print("Coulé")
     else:
-        print("Dommage...")
+        print("Dommage...")"""
