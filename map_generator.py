@@ -117,8 +117,6 @@ def write_coord_in_card(list_coord_single_boat: str, carte: list):
         if(abs(int(abs_begin) - int(abs_end)) < 2 or abs(int(abs_begin) - int(abs_end)) > 5 
            or abs(int(ord_begin) - int(ord_end)) < 2 or abs(int(abs_begin) - int(abs_end)) > 5):
             print("La taille d'un bateau doit être comprise entre 3 et 5 cases")
-        if abs_begin != abs_end and ord_begin != ord_end :
-            print("Vous ne pouvez pas placer de bateaux en diagonale")
         if ord_begin == ord_end:
             if int(abs_begin) < int(abs_end):
                 for i in range(int(abs_end) - int(abs_begin) + 1):
